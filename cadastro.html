@@ -29,10 +29,12 @@
         <h2 class="titulo-paginas">Trabalhe Conosco</h2>
         <form action="#" method="post">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" maxlength="32">
+            <input type="text" id="nome" name="nome" maxlength="32" pattern="[a-zA-Z]+" title="Somente letras são permitidas">
+
 
             <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" inputmode="numeric" maxlength="11">
+            <input type="text" id="cpf" name="cpf" inputmode="numeric" maxlength="11" pattern="\d+" title="Somente números são permitidos">
+
 
 
             <label for="email">Email:</label>
